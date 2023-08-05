@@ -28,12 +28,13 @@ body {
 .title {
   font-size: 36px;
   font-family: "Roboto", sans-serif; /* Set the font to Roboto */
-  color: #fff; /* Set the text color to white */
-  text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2); /* add drop shadow to text */
+  color: #d9d9d9; /* Set the text color to off-white */
+  text-shadow: 10px 10px 18px rgba(0, 0, 0, 0.66); /* add drop shadow to text */
   margin-bottom: 10px;
 }
 
 .tagline {
   font-size: 20px;
+  text-shadow: 5px 5px 9px rgba(0, 0, 0, 0.33); /* add drop shadow to text */
   color: #888;
 }
