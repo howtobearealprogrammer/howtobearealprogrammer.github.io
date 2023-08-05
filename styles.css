@@ -29,6 +29,7 @@ body {
   font-size: 36px;
   font-family: "Roboto", sans-serif; /* Set the font to Roboto */
   color: #fff; /* Set the text color to white */
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2); /* add drop shadow to text */
   margin-bottom: 10px;
 }
 
