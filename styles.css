@@ -1,3 +1,6 @@
+/* Include Google Fonts stylesheet for Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 body {
   margin: 0;
   padding: 0;
@@ -22,13 +25,15 @@ body {
     255,
     255,
     255,
-    0.2
+    0
   ); /* You can adjust the background opacity here */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Optional: add a subtle shadow effect */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);  Optional: add a subtle shadow effect */
 }
 
 .title {
   font-size: 36px;
+  font-family: "Roboto", sans-serif; /* Set the font to Roboto */
+  color: #fff; /* Set the text color to white */
   margin-bottom: 10px;
 }
 
