@@ -23,6 +23,7 @@ body {
   max-width: 600px;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0);
+  position: relative;
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);  shadow effect */
 }
 
@@ -39,7 +40,6 @@ body {
   text-shadow: 5px 5px 9px rgba(0, 0, 0, 0.33); /* add drop shadow to text */
   color: #888;
 }
-
 .bottom-bar {
   position: fixed;
   bottom: 0;
@@ -51,14 +51,13 @@ body {
     0,
     0.25
   ); /* Set the background color with 0.25 opacity */
-  color: #333; /* Set the text color to dark grey */
-  font-size: 14px;
-  padding: 10px;
+  display: flex;
 }
 
-.bottom-bar p {
-  margin: 0;
-  text-align: right;
+.left-content {
+  flex: 1;
+  text-align: left;
+  padding: 5px 20px;
 }
 
 .copywrite-container {
@@ -66,8 +65,58 @@ body {
   padding: 5px 20px;
 }
 
-.copywrite {
+.copywrite,
+.credit {
   font-size: 14px;
   color: #333; /* Set the text color to dark grey */
   margin: 0;
+}
+
+.credit a {
+  color: #333; /* Set the link color to dark grey */
+  text-decoration: underline;
+}
+
+.buttons-container-wrapper {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Add wrap to break buttons into a new line if necessary */
+  gap: 10px; /* Add spacing between buttons */
+}
+/* Button Styles */
+.buttons-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Add padding between buttons and tagline */
+  margin-bottom: 20px; /* Add padding between buttons and bottom bar */
+}
+
+.button {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 0 10px;
+}
+
+.button-text {
+  font-size: 14px;
+  color: #fff; /* Set the text color to white */
+  margin: 0;
+}
+
+/* Adjust the positioning of the buttons container */
+@media screen and (min-height: 600px) {
+  .buttons-container {
+    position: absolute;
+    bottom: calc(
+      50% + 20px
+    ); /* Halfway between tagline and bottom bar, plus 20px offset */
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
