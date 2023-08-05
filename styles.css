@@ -4,7 +4,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
+  overflow: hidden; /* Hide vertical scrollbar */
 }
 
 .background {
@@ -58,4 +59,15 @@ body {
 .bottom-bar p {
   margin: 0;
   text-align: right;
+}
+
+.copywrite-container {
+  text-align: right;
+  padding: 5px 20px;
+}
+
+.copywrite {
+  font-size: 14px;
+  color: #333; /* Set the text color to dark grey */
+  margin: 0;
 }
