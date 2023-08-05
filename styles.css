@@ -38,3 +38,24 @@ body {
   text-shadow: 5px 5px 9px rgba(0, 0, 0, 0.33); /* add drop shadow to text */
   color: #888;
 }
+
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.25
+  ); /* Set the background color with 0.25 opacity */
+  color: #333; /* Set the text color to dark grey */
+  font-size: 14px;
+  padding: 10px;
+}
+
+.bottom-bar p {
+  margin: 0;
+  text-align: right;
+}
