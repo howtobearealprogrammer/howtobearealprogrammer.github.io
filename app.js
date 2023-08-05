@@ -10,6 +10,7 @@ VANTA.FOG({
   baseColor: 0x0,
   zoom: 1.4,
 });
+
 VANTA.DOTS({
   el: "#vanta-dots",
   mouseControls: true,
@@ -19,4 +20,6 @@ VANTA.DOTS({
   minWidth: 200.0,
   scale: 1.0,
   scaleMobile: 1.0,
+  color: 0x105d84,
+  color2: 0x49ceff,
 });
